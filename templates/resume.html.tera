@@ -1,0 +1,126 @@
+{% extends "base" %}
+{% block title %}Luke Newcomb - Resume{% endblock title %}
+{% block head %}
+{{ super() }}
+<script src="/static/js/resume.js" defer></script>
+{% endblock head %}
+
+{% block page_content %}
+<h1 class="title is-1">Luke Newcomb</h1>
+<h2 class="subtitle is-2">Software Engineering Student</h2>
+
+<div class="card section-card container reveal">
+    <div class="card-content">
+        <h3 class="subtitle is-3">Education</h3>
+        <span class="card-section-heading"><strong>Embry-Riddle Aeronautical University</strong></span> <br>
+        <span class="subtitle is-6"><strong>Bachelor of Science, Software Engineering: May 2024</strong></span> <br>
+        <ul>
+            <li>Minor in Computer Engineering and Electrical Engineering</li>
+            <li>GPA: 3.873</li>
+            <li>Dean's List</li>
+        </ul>
+        <br>
+        <span class="card-section-heading"><strong>Eastern Florida State College</strong></span> <br>
+        <span class="subtitle is-6"><strong>Associate of Arts, General Education: May 2020</strong></span> <br>
+        <ul>
+            <li>Minor in Computer Engineering and Electrical Engineering</li>
+            <li>GPA: 3.88</li>
+            <li>President's List</li>
+        </ul>
+    </div>
+</div>
+<div class="card-separator"></div>
+<div class="card section-card container reveal">
+    <div class="card-content">
+        <h3 class="subtitle is-3">Work Experience</h3>
+        <span class="card-section-heading"><strong>Firefly Aerospace Flight Software Engineering Intern</strong></span> <br>
+        <span class="subtitle is-6"><strong>May 2021 - August 2021</strong></span> <br>
+        <ul>
+            <li>Developed an operating system abstraction layer supporting multiple operating systems.</li>
+            <li>Ported the existing flight software to use the developed operating system abstraction layer</li>
+        </ul>
+        <br>
+        <span class="card-section-heading"><strong>Experimental Rocket Propulsion Lab Flight Computer Lead</strong></span> <br>
+        <span class="subtitle is-6"><strong>August 2020 - Present</strong></span> <br>
+        <ul>
+            <li>Developing a fully configurable embedded flight data acquisition system using Rust and an STM32.</li>
+            <li>Designing and implementing a control algorithm for a thrust-vectored propulsive landing rocket.</li>
+        </ul>
+    </div>
+</div>
+<div class="card-separator"></div>
+<div class="card section-card container reveal">
+    <div class="card-content">
+        <h3 class="subtitle is-3">Project Experience</h3>
+        <span class="card-section-heading"><strong>Preprocessing Assembler - Individual project</strong></span> <br>
+        <span class="subtitle is-6"><strong>Designed and implemented an assembler in Rust</strong></span> <br>
+        <ul>
+            <li>Utilizes a preprocessor with full macro support and conditional assembly</li>
+        </ul>
+        <br>
+        <span class="card-section-heading"><strong>LoRa Control System for Plane - 6 person team</strong></span> <br>
+        <span class="subtitle is-6"><strong>Created a system to communicate over long range radio</strong></span> <br>
+        <ul>
+            <li>Allowed for control, uplink, and telemetry downlink from a gyroscope and battery sensors, written in C++.</li>
+        </ul>
+    </div>
+</div>
+<div class="card-separator"></div>
+<div class="card section-card container reveal">
+    <div class="card-content">
+        <h3 class="subtitle is-3">Skills</h3>
+        <span class="card-section-heading"><strong>General:</strong></span> <br>
+        <ul>
+            <li>Object Oriented Programming</li>
+            <li>Linux</li>
+            <li>Real-time Operating Systems/VxWorks</li>
+            <li>Confluence</li>
+            <li>JIRA</li>
+            <li>BitBucket</li>
+            <li>Agile Methodology</li>
+            <li>Embedded Systems</li>
+            <li>Git</li>
+            <li>PCB Design</li>
+            <li>Digital Circuit Design</li>
+            <li>Assembly Programming</li>
+            <li>FPGAs</li>
+            <li>Unity3D</li>
+        </ul>
+        <br>
+        <span class="card-section-heading"><strong>Languages:</strong></span> <br>
+        <ul>
+            <li>C/C++</li>
+            <li>Rust</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Ruby</li>
+        </ul>
+    </div>
+</div>
+<div class="card-separator"></div>
+<div class="card-separator"></div>
+<div class="card-separator"></div>
+{% endblock page_content %}
+
+{% block nav_items %}
+<div class="nav-column column is-10 is-1">
+    <h4>Navigation</h4>
+    <p>
+        <a href="" class="nav-a">Home</a> <br>
+        <a href="" class="nav-a">Portfolio</a> <br>
+    </p>
+    <h4>About Me</h4>
+    <p>I'm a passionate programmer with a goal to design software that rides on rockets. I have been programming as a hobby for 8 years now, and don't plan to stop. I love learning new things and being open to new ideas.</p>
+    <h4>Contact</h4>
+    <p>
+        <a href="https://www.linkedin.com/in/luke-newcomb/">LinkedIn <i class="fa-solid fa-arrow-right-long"></i></a> <br>
+        <a href="https://github.com/newcomb-luke/">GitHub <i class="fa-solid fa-arrow-right-long"></i></a> <br>
+        <a href="mailto:newcombl@my.erau.edu">Email <i class="fa-solid fa-arrow-right-long"></i></a> <br>
+    </p>
+    <br>
+    <br>
+    <br>
+</div>
+{% endblock nav_items %}
