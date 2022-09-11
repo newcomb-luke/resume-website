@@ -83,39 +83,39 @@ a.has-text-primary-dark:hover, a.has-text-primary-dark:focus {
 }
 
 .has-text-link {
-  color: hsl(229deg, 53%, 53%) !important;
+  color: hsl(0deg, 0%, 48%) !important;
 }
 
 a.has-text-link:hover, a.has-text-link:focus {
-  color: #3449a8 !important;
+  color: #616161 !important;
 }
 
 .has-background-link {
-  background-color: hsl(229deg, 53%, 53%) !important;
+  background-color: hsl(0deg, 0%, 48%) !important;
 }
 
 .has-text-link-light {
-  color: #eff1fa !important;
+  color: whitesmoke !important;
 }
 
 a.has-text-link-light:hover, a.has-text-link-light:focus {
-  color: #c8cfee !important;
+  color: #dbdbdb !important;
 }
 
 .has-background-link-light {
-  background-color: #eff1fa !important;
+  background-color: whitesmoke !important;
 }
 
 .has-text-link-dark {
-  color: #3850b7 !important;
+  color: #707070 !important;
 }
 
 a.has-text-link-dark:hover, a.has-text-link-dark:focus {
-  color: #576dcb !important;
+  color: #8a8a8a !important;
 }
 
 .has-background-link-dark {
-  background-color: #3850b7 !important;
+  background-color: #707070 !important;
 }
 
 .has-text-info {

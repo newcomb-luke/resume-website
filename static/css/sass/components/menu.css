@@ -16,16 +16,16 @@
 }
 .menu-list a {
   border-radius: 2px;
-  color: hsl(0deg, 0%, 29%);
+  color: rgb(78, 78, 78);
   display: block;
   padding: 0.5em 0.75em;
 }
 .menu-list a:hover {
-  background-color: hsl(0deg, 0%, 96%);
-  color: hsl(0deg, 0%, 21%);
+  background-color: hsl(0deg, 0%, 21%);
+  color: rgb(40, 43, 43);
 }
 .menu-list a.is-active {
-  background-color: hsl(229deg, 53%, 53%);
+  background-color: hsl(0deg, 0%, 48%);
   color: #fff;
 }
 .menu-list li ul {

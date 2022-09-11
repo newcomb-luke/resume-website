@@ -57,14 +57,14 @@
   color: hsl(171deg, 100%, 41%);
 }
 .panel.is-link .panel-heading {
-  background-color: hsl(229deg, 53%, 53%);
+  background-color: hsl(0deg, 0%, 48%);
   color: #fff;
 }
 .panel.is-link .panel-tabs a.is-active {
-  border-bottom-color: hsl(229deg, 53%, 53%);
+  border-bottom-color: hsl(0deg, 0%, 48%);
 }
 .panel.is-link .panel-block.is-active .panel-icon {
-  color: hsl(229deg, 53%, 53%);
+  color: hsl(0deg, 0%, 48%);
 }
 .panel.is-info .panel-heading {
   background-color: hsl(207deg, 61%, 53%);
@@ -115,7 +115,7 @@
 .panel-heading {
   background-color: hsl(0deg, 0%, 93%);
   border-radius: 6px 6px 0 0;
-  color: hsl(0deg, 0%, 21%);
+  color: rgb(40, 43, 43);
   font-size: 1.25em;
   font-weight: 700;
   line-height: 1.25;
@@ -139,15 +139,15 @@
 }
 
 .panel-list a {
-  color: hsl(0deg, 0%, 29%);
+  color: rgb(78, 78, 78);
 }
 .panel-list a:hover {
-  color: hsl(229deg, 53%, 53%);
+  color: hsl(0deg, 0%, 48%);
 }
 
 .panel-block {
   align-items: center;
-  color: hsl(0deg, 0%, 21%);
+  color: rgb(40, 43, 43);
   display: flex;
   justify-content: flex-start;
   padding: 0.5em 0.75em;
@@ -164,11 +164,11 @@
   flex-wrap: wrap;
 }
 .panel-block.is-active {
-  border-left-color: hsl(229deg, 53%, 53%);
+  border-left-color: hsl(0deg, 0%, 48%);
   color: hsl(0deg, 0%, 21%);
 }
 .panel-block.is-active .panel-icon {
-  color: hsl(229deg, 53%, 53%);
+  color: hsl(0deg, 0%, 48%);
 }
 .panel-block:last-child {
   border-bottom-left-radius: 6px;
@@ -181,7 +181,7 @@ label.panel-block {
 }
 a.panel-block:hover,
 label.panel-block:hover {
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0deg, 0%, 21%);
 }
 
 .panel-icon {

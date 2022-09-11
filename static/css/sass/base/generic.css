@@ -1,5 +1,5 @@
 html {
-  background-color: hsl(0deg, 0%, 4%);
+  background-color: hsl(0deg, 0%, 100%);
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -39,14 +39,14 @@ pre {
 }
 
 body {
-  color: hsl(0deg, 0%, 100%);
+  color: rgb(78, 78, 78);
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
 }
 
 a {
-  color: rgb(170, 174, 251);
+  color: hsl(0deg, 0%, 48%);
   cursor: pointer;
   text-decoration: underline;
   font-size: 1.4em;
@@ -94,7 +94,7 @@ span {
 }
 
 strong {
-  color: hsl(0deg, 0%, 100%);
+  color: rgb(40, 43, 43);
   font-weight: 700;
 }
 
@@ -105,7 +105,7 @@ fieldset {
 pre {
   -webkit-overflow-scrolling: touch;
   background-color: hsl(0deg, 0%, 21%);
-  color: hsl(0deg, 0%, 100%);
+  color: rgb(78, 78, 78);
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -128,5 +128,5 @@ table th:not([align]) {
   text-align: inherit;
 }
 table th {
-  color: hsl(0deg, 0%, 100%);
+  color: rgb(40, 43, 43);
 }/*# sourceMappingURL=generic.css.map */

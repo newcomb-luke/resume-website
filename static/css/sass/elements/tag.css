@@ -53,9 +53,9 @@
 
 .tag:not(body) {
   align-items: center;
-  background-color: hsl(0deg, 0%, 96%);
+  background-color: hsl(0deg, 0%, 21%);
   border-radius: 4px;
-  color: hsl(0deg, 0%, 29%);
+  color: rgb(78, 78, 78);
   display: inline-flex;
   font-size: 0.75rem;
   height: 2em;
@@ -94,12 +94,12 @@
   color: #00947e;
 }
 .tag:not(body).is-link {
-  background-color: hsl(229deg, 53%, 53%);
+  background-color: hsl(0deg, 0%, 48%);
   color: #fff;
 }
 .tag:not(body).is-link.is-light {
-  background-color: #eff1fa;
-  color: #3850b7;
+  background-color: whitesmoke;
+  color: #707070;
 }
 .tag:not(body).is-info {
   background-color: hsl(207deg, 61%, 53%);
@@ -179,10 +179,10 @@
   width: 1px;
 }
 .tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
-  background-color: #e8e8e8;
+  background-color: #292929;
 }
 .tag:not(body).is-delete:active {
-  background-color: #dbdbdb;
+  background-color: #1c1c1c;
 }
 .tag:not(body).is-rounded {
   border-radius: 9999px;
