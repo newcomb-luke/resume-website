@@ -10313,8 +10313,12 @@ html, body {
   margin: 0;
   font-size: 100%;
   font-family: "Montserrat";
-  overflow-x: hidden;
   background: black;
+}
+
+body {
+  overflow-x: clip;
+  height: auto;
 }
 
 .my-content {
