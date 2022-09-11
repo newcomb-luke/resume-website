@@ -16,4 +16,5 @@ Cargo.lock
 
 *.css
 *.map
-!main.css
+!index.css
+!resume.css
