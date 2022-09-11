@@ -12,9 +12,19 @@ fn resume() -> Template {
     Template::render("resume", context! {} )
 }
 
+#[get("/portfolio")]
+fn portfolio() -> Template {
+    Template::render("portfolio", context! {} )
+}
+
+#[get("/contact")]
+fn contact() -> Template {
+    Template::render("contact", context! {} )
+}
+
 #[launch]
 fn rocket() -> _ {
     rocket::build().attach(Template::fairing())
         .mount("/static", FileServer::from("static"))
-        .mount("/", routes![index, resume])
+        .mount("/", routes![index, resume, portfolio, contact])
 }

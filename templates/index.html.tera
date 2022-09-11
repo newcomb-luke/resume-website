@@ -2,10 +2,85 @@
 {% block title %}Luke Newcomb{% endblock title %}
 {% block head %}
 {{ super() }}
+<link rel="stylesheet" href="/static/css/index.css">
+<script src="/static/js/index.js" defer></script>
 {% endblock head %}
 
 {% block page_content %}
+<h1 class="title main-title is-size-1-mobile centered-text reveal">
+    Hello. <br>
+    I'm  <span>Luke</span>
+</h1>
+
+<div class="columns">
+    <div class="column is-10 is-offset-1">
+        <h2 class="title is-2 is-size-3-touch centered-text reveal index-subtitle">I'm a software engineering student who loves learning new things.</h2>
+        
+        <h2 class="title is-2 is-size-3-touch centered-text reveal index-subtitle">My Projects</h2>
+        
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
+                <div class="columns is-desktop">
+                    <div class="column">
+                        <a href="/portfolio#preprocessing_assembler">
+                            <div class="card reveal index-card">
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h3>Preprocessing Assembler <i class="fa-solid fa-arrow-right-long"></i></h3>
+                                        <h4>Custom domain-specific language development toolchain</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column is-1"></div>
+                    <div class="column">
+                        <a href="/portfolio#flight_computer">
+                            <div class="card reveal index-card">
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h3>Rocket Flight Computer <i class="fa-solid fa-arrow-right-long"></i></h3>
+                                        <h4>In-house flight computer with custom PCB and software.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="/portfolio" class="centered-text">
+            <h3 class="reveal footer-link">View More <i class="fa-solid fa-arrow-right-long"></i></h3>
+        </a>
+        
+        <h2 class="title is-2 is-size-3-touch centered-text reveal index-header">About Me</h2>
+        
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-half-desktop is-three-quarters-tablet">
+                <p class="centered-text reveal">
+                    I've been programming as a hobby since 2014. I started with small projects in Java, and then spread into Python and many other programming languages.
+                    I now know Rust, C/C++, and C#, among others. I have a wide range of interests and work on long-term, short-term, individual, and team projects all with equal passion.
+                </p>
+            </div>
+            <div class="column"></div>
+        </div>
+        
+        <h2 class="title is-2 is-size-3-touch centered-text reveal index-header">Personal Goals</h2>
+        
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-half-desktop is-three-quarters-tablet">
+                <p class="centered-text reveal">
+                    I want to write code that goes into space. <br>
+                    I want to never stop improving myself and learning.
+                </p>
+            </div>
+            <div class="column"></div>
+        </div>
+        
+        <div class="end-page-spacer"></div>
+    </div>
+</div>
 {% endblock page_content %}
-My site
-{% block nav_items %}
-{% endblock nav_items %}

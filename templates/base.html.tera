@@ -7,19 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %}</title>
 
-    <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/static/css/main.css">
     {% endblock head %}
 </head>
 <body>
     <div class="my-content columns is-desktop">
-        <div class="page column is-three-quarters-desktop is-full-tablet">
-            <div class="page-content">{% block page_content %}{% endblock page_content %}</div>
+        <div class="column is-full">
+            <nav class="navbar my-navbar is-transparent" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        Luke N.
+                    </a>
+                    
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+                <div id="navbarBasicExample" class="navbar-menu centered-text">
+                    <div class="navbar-start">
+                        
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/">
+                            Home
+                        </a>
+                        <a class="navbar-item" href="/portfolio">
+                            Portfolio
+                        </a>
+                        <a class="navbar-item" href="/resume">
+                            Resume
+                        </a>
+                        <a class="navbar-item" href="/contact">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            {% block page_content %}
+            {% endblock page_content %}
         </div>
-        <div class="right-nav column columns is-one-quarter-desktop is-full-tablet">
-            {% block nav_items %}{% endblock nav_items %}
-        </div>
+    </div>
+    <div class="end-page">
+        <p class="end-page-text centered-text">Website by &shy; <nobr>Luke Newcomb</nobr></p>
+        <p class="end-page-subtext centered-text">Powered by <a href="https://rocket.rs">Rocket.rs</a></p>
     </div>
 </body>
 </html>

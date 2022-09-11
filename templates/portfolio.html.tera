@@ -1,0 +1,104 @@
+{% extends "base" %}
+{% block title %}Luke Newcomb - Portfolio{% endblock title %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/static/css/index.css">
+<script src="/static/js/index.js" defer></script>
+{% endblock head %}
+
+{% block page_content %}
+
+<h1 class="title main-title is-size-1-mobile centered-text reveal">
+    Portfolio
+</h1>
+
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        <div class="card reveal">
+            <div class="card-content">
+                <div class="content">
+                    <h3 id="preprocessing_assembler">Preprocessing Assembler</h3>
+                    <h4>Custom domain-specific language development toolchain</h4>
+                    <p>
+                        I wrote a fully-featured development toolchain complete with my own custom two-pass assembler, linker, and object file format.
+                        The object file format is a simplified version of the <a href="https://en.wikipedia.org/wiki/Executable_and_Linkable_Format">ELF</a> file format commonly used on Linux systems.
+                        The assembler is "fully-featured" in the sense that there are useful and colorful diagnostic messages that
+                        are printed after an error in lexing, preprocessing, parsing, or code analysis. Assembly directives including conditional assembly,
+                        two types of macros, and include directives. This was designed in such a way that any user
+                        could use it as if it were Clang, GCC, or <a href="https://rust-lang.org">RustC</a>. After successfully completing the project, I also wrote extensive documentation
+                        using a software called <a href="https://rust-lang.github.io/mdBook/">mdBook</a> which is hosted on <a href="https://newcomb-luke.github.io/kOS-KASM/">GitHub Pages</a>.
+                    </p>
+                    <a href="https://github.com/newcomb-luke/kOS-KASM">GitHub Repository <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-separator"></div>
+
+        <div class="card reveal">
+            <div class="card-content">
+                <div class="content">
+                    <h3 id="flight_computer">Rocket Flight Computer</h3>
+                    <h4>Team lead for an in-house flight computer with custom PCB and software</h4>
+                    <p>
+                        I am part of a team developing a rocket flight computer and data acquisition system to support projects in one of Embry-Riddle Daytona Beach's
+                        rocket clubs on campus. I am working with a team of software and electrical specialists to write software and design the PCB
+                        for the club's new modular flight computer. The software is written in the <a href="https://rust-lang.org">Rust</a> programming
+                        language, for its execution speed and safety guarantees. This was selected over C or C++ because the Rust compiler guarantees
+                        no incorrect memory management at compile-time. The PCBs are designed in KiCad using off-the-shelf electronics components such
+                        as accelerometers and barometric pressure sensors.
+                    </p>
+                    <a href="https://erpl.space/">ERPL Website <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-separator"></div>
+
+        <div class="card reveal">
+            <div class="card-content">
+                <div class="content">
+                    <h3 id="password_manager">Password Manager</h3>
+                    <h4>Personal cryptographically secure password manager</h4>
+                    <p>
+                        I am developing my own personal password manager, with the backend written in Rust using <a href="https://rocket.rs">Rocket.rs</a>, and 
+                        using a web frontend. Cryptographically it is based off of Lastpass' description of their password storage practices. The user's vault
+                        (all of their stored passwords, notes, and other sensitive information) is encrypted using <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a> symmetric encryption using the user's key.
+                        Key derivation is done in two passes, each using the <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> key-derivation function. The first pass generates
+                        the vault key, which is used to decrypt and encrypt the vault. The second pass uses the vault key and generates an "authentication key" which is used to
+                        verify a user's identity in order to request the vault, change the user's password, and any other non-vault-related operations.
+                    </p>
+                    <a href="https://github.com/newcomb-luke/password-manager-web-frontend">Frontend GitHub Repository <i class="fa-solid fa-arrow-right-long"></i></a> <br>
+                    <a href="https://github.com/newcomb-luke/password-manager">Backend GitHub Repository <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-separator"></div>
+
+        <div class="card reveal">
+            <div class="card-content">
+                <div class="content">
+                    <h3 id="flight_tracking">Flight Tracking Application</h3>
+                    <h4>Team project to track aircraft</h4>
+                    <p>
+                        I was part of a team developing a flight tracking application to track as many aircract around the world as possible in real-time.
+                        This was done for part of our introduction to Software Engineering class, and was developed using Scrum and Agile methodology.
+                        It is written in the <a href="https://rust-lang.org">Rust</a> programming language, and uses <a href="https://github.com/PistonDevelopers/conrod">Conrod</a>
+                        as our GUI library, along with OpenGL using a library called <a href="https://github.com/glium/glium">Glium</a>. It used the
+                        <a href="https://opensky-network.org/">OpenSky Network</a>, with a custom <a href="https://crates.io/crates/opensky_api">API wrapper library</a> that I wrote.
+                        It also uses the <a href="https://docs.maptiler.com/cloud/api/">Maptiler Cloud</a> API to download map data of the entire world, and the <a href="https://www.rainviewer.com/api.html">RainViewer</a>
+                        to get live weather data. All of this was combined to create an interactive map showing as many aircraft as OpenSky API can supply.
+                    </p>
+
+                    <a href="https://github.com/FlightTrackingERAU/FlightTracking">GitHub Repository <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-separator"></div>
+        <div class="card-separator"></div>
+        <div class="card-separator"></div>
+    </div>
+</div>
+{% endblock page_content %}

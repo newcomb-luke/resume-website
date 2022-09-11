@@ -1,0 +1,164 @@
+@import "bulma";
+
+$background-color: #ffffff;
+$blue-color: rgb(202, 255, 252);
+
+html, body {
+    margin: 0;
+    font-size: 100%;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+html {
+    background: $background-color;
+}
+
+body {
+    background: linear-gradient(165deg, $blue-color, $background-color, $background-color);
+}
+
+.my-content {
+    margin: 0;
+    margin-bottom: 0;
+    min-height: 100vh;
+}
+
+.title.main-title {
+    font-size: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.my-navbar {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.9), 10px 10px 15px rgba(70, 70, 70, 0.3);
+    background: $background-color;
+    border-radius: 1em;
+}
+
+.navbar-menu {
+    border-radius: 1em;
+    background: $background-color;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.navbar-brand {
+    a.navbar-item {
+        text-decoration: none;
+        margin-left: 2em;
+    }
+}
+
+.navbar-item {
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    border-bottom: 2px solid black;
+}
+
+.navbar-end {
+    a {
+        margin-right: 2em;
+    }
+}
+
+.index-card {
+    background: $background-color;
+    height: 100%;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.index-subtitle {
+    padding-bottom: 2em;
+}
+
+.index-header {
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-link {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.end-page-spacer {
+    height: 10rem;
+}
+
+.end-page {
+    background: black;
+    width: 100%;
+
+    .end-page-text {
+        font-size: 1.8rem;
+        color: white;
+        padding-top: 2em;
+    }
+
+    .end-page-subtext {
+        font-size: 1.6rem;
+        color: white;
+        padding-bottom: 2em;
+
+        a {
+            font-size: 1.6rem;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+.card-separator {
+    height: 2em;
+}
+
+.card-content {
+    p {
+        font-size: 1.2rem;
+    }
+    a {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    img {
+        height: 4em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-brand {
+        a.navbar-item {
+            margin-left: 0.5em;
+        }
+    }
+
+    .navbar-end {
+        a {
+            margin-right: 0;
+        }
+    }
+}

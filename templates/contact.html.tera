@@ -1,0 +1,55 @@
+{% extends "base" %}
+{% block title %}Luke Newcomb - Contact{% endblock title %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/static/css/index.css">
+<script src="/static/js/index.js" defer></script>
+{% endblock head %}
+
+{% block page_content %}
+<h1 class="title main-title is-size-1-mobile centered-text reveal">
+    Contact
+</h1>
+
+<div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+        <a href="https://www.linkedin.com/in/luke-newcomb/">
+            <div class="card reveal">
+                <div class="card-content">
+                    <div class="content centered-text">
+                        <img src="https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="LinkedIn Logo">
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <div class="card-separator"></div>
+        
+        <a href="https://github.com/newcomb-luke/">
+            <div class="card reveal">
+                <div class="card-content">
+                    <div class="content centered-text">   
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub Logo">
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <div class="card-separator"></div>
+        
+        <a href="mailto:newcombl@my.erau.edu">
+            <div class="card reveal">
+                <div class="card-content">
+                    <div class="content centered-text">
+                        <img src="https://www.logo.wine/a/logo/Microsoft_Outlook/Microsoft_Outlook-Logo.wine.svg" alt="LinkedIn Logo">
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <div class="card-separator"></div>
+        <div class="card-separator"></div>
+        <div class="card-separator"></div>
+    </div>
+</div>
+{% endblock page_content %}
